@@ -1,0 +1,6502 @@
+[
+  {
+    "id": 115,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 3x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 3, thay x = 1 duoc 19."
+  },
+  {
+    "id": 116,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 117,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 6) la gi?",
+    "opts": [
+      "x > 6",
+      "x >= 6",
+      "x < 6",
+      "x <= 6"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 6 >= 0."
+  },
+  {
+    "id": 118,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 119,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 120,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 121,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 6i la gi?",
+    "opts": [
+      "6.08",
+      "7",
+      "6",
+      "37"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 122,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 3, d = 3. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "23",
+      "24",
+      "25",
+      "26"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 123,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 4. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "46",
+      "48",
+      "50",
+      "52"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 124,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 125,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 2x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 2, thay x = 5 duoc 32."
+  },
+  {
+    "id": 126,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 127,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 2) la gi?",
+    "opts": [
+      "x > 2",
+      "x >= 2",
+      "x < 2",
+      "x <= 2"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 2 >= 0."
+  },
+  {
+    "id": 128,
+    "topic": "Logarit",
+    "q": "Tinh log2(16).",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^4 = 16 nen log2(16) = 4."
+  },
+  {
+    "id": 129,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 130,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 131,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 2 + 1i la gi?",
+    "opts": [
+      "2.24",
+      "3",
+      "2",
+      "5"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 132,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 2, d = 5. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 133,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 3. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "106",
+      "108",
+      "110",
+      "112"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 134,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 135,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 5x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 5, thay x = 1 duoc 23."
+  },
+  {
+    "id": 136,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 137,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 138,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 139,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 140,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 141,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 2 + 9i la gi?",
+    "opts": [
+      "9.22",
+      "11",
+      "18",
+      "85"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 142,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 4, d = 4. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "31",
+      "32",
+      "33",
+      "34"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 143,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 3. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "106",
+      "108",
+      "110",
+      "112"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 144,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 145,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 7x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "37",
+      "39",
+      "41",
+      "43"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 7, thay x = 2 duoc 39."
+  },
+  {
+    "id": 146,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 147,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 2) la gi?",
+    "opts": [
+      "x > 2",
+      "x >= 2",
+      "x < 2",
+      "x <= 2"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 2 >= 0."
+  },
+  {
+    "id": 148,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 149,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 150,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 151,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 9i la gi?",
+    "opts": [
+      "12.04",
+      "17",
+      "72",
+      "145"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 152,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 1. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 153,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 3. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "106",
+      "108",
+      "110",
+      "112"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 154,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 155,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 9x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 9, thay x = 1 duoc 23."
+  },
+  {
+    "id": 156,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 157,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 7) la gi?",
+    "opts": [
+      "x > 7",
+      "x >= 7",
+      "x < 7",
+      "x <= 7"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 7 >= 0."
+  },
+  {
+    "id": 158,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 159,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 160,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 161,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 9i la gi?",
+    "opts": [
+      "10.3",
+      "14",
+      "45",
+      "106"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 162,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 1. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 163,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 3. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 164,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 165,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 5x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "51",
+      "53",
+      "55",
+      "57"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 5, thay x = 3 duoc 53."
+  },
+  {
+    "id": 166,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 1x^0 dx.",
+    "opts": [
+      "0",
+      "1",
+      "1",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 167,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 168,
+    "topic": "Logarit",
+    "q": "Tinh log2(16).",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^4 = 16 nen log2(16) = 4."
+  },
+  {
+    "id": 169,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 170,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 171,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 2 + 4i la gi?",
+    "opts": [
+      "4.47",
+      "6",
+      "8",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 172,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 5. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 173,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 4. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "46",
+      "48",
+      "50",
+      "52"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 174,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 175,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 2x^2 + 1x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "11",
+      "13",
+      "15",
+      "17"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 4x + 1, thay x = 3 duoc 13."
+  },
+  {
+    "id": 176,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 177,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 9) la gi?",
+    "opts": [
+      "x > 9",
+      "x >= 9",
+      "x < 9",
+      "x <= 9"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 9 >= 0."
+  },
+  {
+    "id": 178,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 179,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 180,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 181,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 7i la gi?",
+    "opts": [
+      "8.6",
+      "12",
+      "35",
+      "74"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 182,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 7, d = 5. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 183,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 2. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 184,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 185,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 2x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "32",
+      "34",
+      "36",
+      "38"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 2, thay x = 2 duoc 34."
+  },
+  {
+    "id": 186,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 187,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 188,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 189,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 190,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 191,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 7i la gi?",
+    "opts": [
+      "10.63",
+      "15",
+      "56",
+      "113"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 192,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 1. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 193,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 4. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "1022",
+      "1024",
+      "1026",
+      "1028"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 194,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 195,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 2x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "70",
+      "72",
+      "74",
+      "76"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 2, thay x = 5 duoc 72."
+  },
+  {
+    "id": 196,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 6x^5 dx.",
+    "opts": [
+      "5",
+      "6",
+      "1",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 197,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 198,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 199,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 200,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 201,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 9 + 6i la gi?",
+    "opts": [
+      "10.82",
+      "15",
+      "54",
+      "117"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 202,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 6, d = 5. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 203,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 2. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 204,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 205,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 6x^2 + 6x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "40",
+      "42",
+      "44",
+      "46"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 12x + 6, thay x = 3 duoc 42."
+  },
+  {
+    "id": 206,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 207,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 9) la gi?",
+    "opts": [
+      "x > 9",
+      "x >= 9",
+      "x < 9",
+      "x <= 9"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 9 >= 0."
+  },
+  {
+    "id": 208,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 209,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 210,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 211,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 3i la gi?",
+    "opts": [
+      "3.16",
+      "4",
+      "3",
+      "10"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 212,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 2, d = 3. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 213,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 3. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "43",
+      "45",
+      "47",
+      "49"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 214,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 215,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 1x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 1, thay x = 1 duoc 17."
+  },
+  {
+    "id": 216,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 217,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 218,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 219,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 220,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 221,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 9i la gi?",
+    "opts": [
+      "9.06",
+      "10",
+      "9",
+      "82"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 222,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 5. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 223,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 3. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "79",
+      "81",
+      "83",
+      "85"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 224,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 225,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 2x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "28",
+      "30",
+      "32",
+      "34"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 2, thay x = 2 duoc 30."
+  },
+  {
+    "id": 226,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 227,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 7) la gi?",
+    "opts": [
+      "x > 7",
+      "x >= 7",
+      "x < 7",
+      "x <= 7"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 7 >= 0."
+  },
+  {
+    "id": 228,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 229,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 230,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 231,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 5i la gi?",
+    "opts": [
+      "5.1",
+      "6",
+      "5",
+      "26"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 232,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 7, d = 3. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 233,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 3. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 234,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 235,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 5x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "11",
+      "13",
+      "15",
+      "17"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 5, thay x = 4 duoc 13."
+  },
+  {
+    "id": 236,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 237,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 238,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 239,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 240,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 241,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 5i la gi?",
+    "opts": [
+      "9.43",
+      "13",
+      "40",
+      "89"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 242,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 2, d = 2. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 243,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "254",
+      "256",
+      "258",
+      "260"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 244,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 245,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 7x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "15",
+      "17",
+      "19",
+      "21"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 7, thay x = 5 duoc 17."
+  },
+  {
+    "id": 246,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 1x^0 dx.",
+    "opts": [
+      "0",
+      "1",
+      "1",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 247,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 248,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 249,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 250,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 251,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 3i la gi?",
+    "opts": [
+      "5.83",
+      "8",
+      "15",
+      "34"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 252,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 5. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 253,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 2. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 254,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 255,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 9x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "43",
+      "45",
+      "47",
+      "49"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 9, thay x = 2 duoc 45."
+  },
+  {
+    "id": 256,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 257,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 258,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 259,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 260,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 261,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 7 + 1i la gi?",
+    "opts": [
+      "7.07",
+      "8",
+      "7",
+      "50"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 262,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 4, d = 2. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 263,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 3. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "133",
+      "135",
+      "137",
+      "139"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 264,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 265,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 1x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "29",
+      "31",
+      "33",
+      "35"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 1, thay x = 5 duoc 31."
+  },
+  {
+    "id": 266,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 267,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 5) la gi?",
+    "opts": [
+      "x > 5",
+      "x >= 5",
+      "x < 5",
+      "x <= 5"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 5 >= 0."
+  },
+  {
+    "id": 268,
+    "topic": "Logarit",
+    "q": "Tinh log2(16).",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^4 = 16 nen log2(16) = 4."
+  },
+  {
+    "id": 269,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 270,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 5 la bao nhieu?",
+    "opts": [
+      "25",
+      "125",
+      "30",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 125."
+  },
+  {
+    "id": 271,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 8i la gi?",
+    "opts": [
+      "8.94",
+      "12",
+      "32",
+      "80"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 272,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 2, d = 2. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 273,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 2. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "46",
+      "48",
+      "50",
+      "52"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 274,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 275,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 6x^2 + 7x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "53",
+      "55",
+      "57",
+      "59"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 12x + 7, thay x = 4 duoc 55."
+  },
+  {
+    "id": 276,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 277,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 278,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 279,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 280,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 281,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 3i la gi?",
+    "opts": [
+      "8.54",
+      "11",
+      "24",
+      "73"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 282,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 4. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "32",
+      "33",
+      "34",
+      "35"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 283,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "254",
+      "256",
+      "258",
+      "260"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 284,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 285,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 3x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "9",
+      "11",
+      "13",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 3, thay x = 4 duoc 11."
+  },
+  {
+    "id": 286,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 287,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 9) la gi?",
+    "opts": [
+      "x > 9",
+      "x >= 9",
+      "x < 9",
+      "x <= 9"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 9 >= 0."
+  },
+  {
+    "id": 288,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 289,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 290,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 291,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 2 + 4i la gi?",
+    "opts": [
+      "4.47",
+      "6",
+      "8",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 292,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 4, d = 4. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 293,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 3. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "1213",
+      "1215",
+      "1217",
+      "1219"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 294,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 295,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 4x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "58",
+      "60",
+      "62",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 4, thay x = 4 duoc 60."
+  },
+  {
+    "id": 296,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 297,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 7) la gi?",
+    "opts": [
+      "x > 7",
+      "x >= 7",
+      "x < 7",
+      "x <= 7"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 7 >= 0."
+  },
+  {
+    "id": 298,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 299,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 300,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 5 la bao nhieu?",
+    "opts": [
+      "25",
+      "125",
+      "30",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 125."
+  },
+  {
+    "id": 301,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 1i la gi?",
+    "opts": [
+      "5.1",
+      "6",
+      "5",
+      "26"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 302,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 3, d = 3. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 303,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 4. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "3070",
+      "3072",
+      "3074",
+      "3076"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 304,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 305,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 7x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "59",
+      "61",
+      "63",
+      "65"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 7, thay x = 3 duoc 61."
+  },
+  {
+    "id": 306,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 307,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 5) la gi?",
+    "opts": [
+      "x > 5",
+      "x >= 5",
+      "x < 5",
+      "x <= 5"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 5 >= 0."
+  },
+  {
+    "id": 308,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 309,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 310,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 311,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 7 + 1i la gi?",
+    "opts": [
+      "7.07",
+      "8",
+      "7",
+      "50"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 312,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 9, d = 2. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "16",
+      "17",
+      "18",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 313,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "318",
+      "320",
+      "322",
+      "324"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 314,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 315,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 9x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "31",
+      "33",
+      "35",
+      "37"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 9, thay x = 4 duoc 33."
+  },
+  {
+    "id": 316,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 317,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 6) la gi?",
+    "opts": [
+      "x > 6",
+      "x >= 6",
+      "x < 6",
+      "x <= 6"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 6 >= 0."
+  },
+  {
+    "id": 318,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 319,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 320,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 321,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 7i la gi?",
+    "opts": [
+      "8.06",
+      "11",
+      "28",
+      "65"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 322,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 1. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 323,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 2. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 324,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 325,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 5x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "57",
+      "59",
+      "61",
+      "63"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 5, thay x = 3 duoc 59."
+  },
+  {
+    "id": 326,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 327,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 328,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 329,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 330,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 331,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 3 + 7i la gi?",
+    "opts": [
+      "7.62",
+      "10",
+      "21",
+      "58"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 332,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 7, d = 4. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "30",
+      "31",
+      "32",
+      "33"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 333,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 2. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "126",
+      "128",
+      "130",
+      "132"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 334,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 335,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 6x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "22",
+      "24",
+      "26",
+      "28"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 6, thay x = 3 duoc 24."
+  },
+  {
+    "id": 336,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 337,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 338,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 339,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 340,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 341,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 5i la gi?",
+    "opts": [
+      "5.1",
+      "6",
+      "5",
+      "26"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 342,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 3, d = 1. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 343,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 2. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 344,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 345,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 6x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "46",
+      "48",
+      "50",
+      "52"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 6, thay x = 3 duoc 48."
+  },
+  {
+    "id": 346,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 347,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 5) la gi?",
+    "opts": [
+      "x > 5",
+      "x >= 5",
+      "x < 5",
+      "x <= 5"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 5 >= 0."
+  },
+  {
+    "id": 348,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 349,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 350,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 351,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 6 + 3i la gi?",
+    "opts": [
+      "6.71",
+      "9",
+      "18",
+      "45"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 352,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 1. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 353,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 3. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 354,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 355,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 2x^2 + 3x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "13",
+      "15",
+      "17",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 4x + 3, thay x = 3 duoc 15."
+  },
+  {
+    "id": 356,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 6x^5 dx.",
+    "opts": [
+      "5",
+      "6",
+      "1",
+      "7"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 357,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 358,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 359,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 360,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 5 la bao nhieu?",
+    "opts": [
+      "25",
+      "125",
+      "30",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 125."
+  },
+  {
+    "id": 361,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 2i la gi?",
+    "opts": [
+      "5.39",
+      "7",
+      "10",
+      "29"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 362,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 10, d = 2. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 363,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 4. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "62",
+      "64",
+      "66",
+      "68"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 364,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 365,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 1x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "89",
+      "91",
+      "93",
+      "95"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 1, thay x = 5 duoc 91."
+  },
+  {
+    "id": 366,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 1x^0 dx.",
+    "opts": [
+      "0",
+      "1",
+      "1",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 367,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 7) la gi?",
+    "opts": [
+      "x > 7",
+      "x >= 7",
+      "x < 7",
+      "x <= 7"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 7 >= 0."
+  },
+  {
+    "id": 368,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 369,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 370,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 371,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 5i la gi?",
+    "opts": [
+      "9.43",
+      "13",
+      "40",
+      "89"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 372,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 2. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 373,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 2. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 374,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 375,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 5x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "67",
+      "69",
+      "71",
+      "73"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 5, thay x = 4 duoc 69."
+  },
+  {
+    "id": 376,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 377,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 378,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 379,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 380,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 381,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 9i la gi?",
+    "opts": [
+      "9.06",
+      "10",
+      "9",
+      "82"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 382,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 10, d = 2. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "21",
+      "22",
+      "23",
+      "24"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 383,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 3. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "970",
+      "972",
+      "974",
+      "976"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 384,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 385,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 2x^2 + 1x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 4x + 1, thay x = 2 duoc 9."
+  },
+  {
+    "id": 386,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 387,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 4) la gi?",
+    "opts": [
+      "x > 4",
+      "x >= 4",
+      "x < 4",
+      "x <= 4"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 4 >= 0."
+  },
+  {
+    "id": 388,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 389,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 390,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 5 la bao nhieu?",
+    "opts": [
+      "25",
+      "125",
+      "30",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 125."
+  },
+  {
+    "id": 391,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 7 + 6i la gi?",
+    "opts": [
+      "9.22",
+      "13",
+      "42",
+      "85"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 392,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 4. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 393,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 4. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "1022",
+      "1024",
+      "1026",
+      "1028"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 394,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 395,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 5x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "73",
+      "75",
+      "77",
+      "79"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 5, thay x = 5 duoc 75."
+  },
+  {
+    "id": 396,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 397,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 398,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 399,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 400,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 401,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 3 + 2i la gi?",
+    "opts": [
+      "3.61",
+      "5",
+      "6",
+      "13"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 402,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 2. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 403,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 3. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "241",
+      "243",
+      "245",
+      "247"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 404,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 405,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 6x^2 + 4x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "14",
+      "16",
+      "18",
+      "20"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 12x + 4, thay x = 1 duoc 16."
+  },
+  {
+    "id": 406,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 407,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 408,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 409,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 410,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 411,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 7i la gi?",
+    "opts": [
+      "10.63",
+      "15",
+      "56",
+      "113"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 412,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 6, d = 5. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 413,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "190",
+      "192",
+      "194",
+      "196"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 414,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 415,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 3x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "13",
+      "15",
+      "17",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 3, thay x = 2 duoc 15."
+  },
+  {
+    "id": 416,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 417,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 5) la gi?",
+    "opts": [
+      "x > 5",
+      "x >= 5",
+      "x < 5",
+      "x <= 5"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 5 >= 0."
+  },
+  {
+    "id": 418,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 419,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 420,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 421,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 9 + 6i la gi?",
+    "opts": [
+      "10.82",
+      "15",
+      "54",
+      "117"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 422,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 5. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "24",
+      "25",
+      "26",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 423,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 2. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 424,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 425,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 5x^2 + 2x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 10x + 2, thay x = 1 duoc 12."
+  },
+  {
+    "id": 426,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 427,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 428,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 429,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 430,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 431,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 7 + 4i la gi?",
+    "opts": [
+      "8.06",
+      "11",
+      "28",
+      "65"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 432,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 4, d = 2. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 433,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 2. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 434,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 435,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 2x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "80",
+      "82",
+      "84",
+      "86"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 2, thay x = 5 duoc 82."
+  },
+  {
+    "id": 436,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 1x^0 dx.",
+    "opts": [
+      "0",
+      "1",
+      "1",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 437,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 438,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 439,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 440,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 441,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 1i la gi?",
+    "opts": [
+      "4.12",
+      "5",
+      "4",
+      "17"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 442,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 7, d = 1. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 443,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 3. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "484",
+      "486",
+      "488",
+      "490"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 444,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 445,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 2x^2 + 2x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "16",
+      "18",
+      "20",
+      "22"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 4x + 2, thay x = 4 duoc 18."
+  },
+  {
+    "id": 446,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 447,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 9) la gi?",
+    "opts": [
+      "x > 9",
+      "x >= 9",
+      "x < 9",
+      "x <= 9"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 9 >= 0."
+  },
+  {
+    "id": 448,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 449,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 450,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 5 la bao nhieu?",
+    "opts": [
+      "25",
+      "125",
+      "30",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 125."
+  },
+  {
+    "id": 451,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 8i la gi?",
+    "opts": [
+      "9.43",
+      "13",
+      "40",
+      "89"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 452,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 4, d = 2. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 453,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 2. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 454,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 455,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 2x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 2, thay x = 2 duoc 14."
+  },
+  {
+    "id": 456,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 457,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 458,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 459,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 460,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 461,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 2i la gi?",
+    "opts": [
+      "4.47",
+      "6",
+      "8",
+      "20"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 462,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 7, d = 1. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 463,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 3. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "1213",
+      "1215",
+      "1217",
+      "1219"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 464,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 465,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 7x^2 + 6x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "74",
+      "76",
+      "78",
+      "80"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 14x + 6, thay x = 5 duoc 76."
+  },
+  {
+    "id": 466,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 467,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?",
+    "opts": [
+      "x > 1",
+      "x >= 1",
+      "x < 1",
+      "x <= 1"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 1 >= 0."
+  },
+  {
+    "id": 468,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 469,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 470,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 471,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 7i la gi?",
+    "opts": [
+      "8.6",
+      "12",
+      "35",
+      "74"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 472,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 2. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 473,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "318",
+      "320",
+      "322",
+      "324"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 474,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 475,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 5x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "93",
+      "95",
+      "97",
+      "99"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 5, thay x = 5 duoc 95."
+  },
+  {
+    "id": 476,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 477,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 8) la gi?",
+    "opts": [
+      "x > 8",
+      "x >= 8",
+      "x < 8",
+      "x <= 8"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 8 >= 0."
+  },
+  {
+    "id": 478,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 479,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 480,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 481,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 6i la gi?",
+    "opts": [
+      "10.0",
+      "14",
+      "48",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 482,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 9, d = 1. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 483,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 3. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "403",
+      "405",
+      "407",
+      "409"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 484,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 485,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 7x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 7, thay x = 1 duoc 9."
+  },
+  {
+    "id": 486,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 487,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 4) la gi?",
+    "opts": [
+      "x > 4",
+      "x >= 4",
+      "x < 4",
+      "x <= 4"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 4 >= 0."
+  },
+  {
+    "id": 488,
+    "topic": "Logarit",
+    "q": "Tinh log2(16).",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^4 = 16 nen log2(16) = 4."
+  },
+  {
+    "id": 489,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 490,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 491,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 7i la gi?",
+    "opts": [
+      "7.07",
+      "8",
+      "7",
+      "50"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 492,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 1. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 493,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 2. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "30",
+      "32",
+      "34",
+      "36"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 494,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 495,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 7x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "41",
+      "43",
+      "45",
+      "47"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 7, thay x = 2 duoc 43."
+  },
+  {
+    "id": 496,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 497,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 6) la gi?",
+    "opts": [
+      "x > 6",
+      "x >= 6",
+      "x < 6",
+      "x <= 6"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 6 >= 0."
+  },
+  {
+    "id": 498,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 499,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 500,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 6 la bao nhieu?",
+    "opts": [
+      "36",
+      "216",
+      "36",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 216."
+  },
+  {
+    "id": 501,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 6i la gi?",
+    "opts": [
+      "7.21",
+      "10",
+      "24",
+      "52"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 502,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 4. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "27",
+      "28",
+      "29",
+      "30"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 503,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 4. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "1022",
+      "1024",
+      "1026",
+      "1028"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 504,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 505,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 5x^2 + 5x. Gia tri cua f'(4) la bao nhieu?",
+    "opts": [
+      "43",
+      "45",
+      "47",
+      "49"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 10x + 5, thay x = 4 duoc 45."
+  },
+  {
+    "id": 506,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 507,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 5) la gi?",
+    "opts": [
+      "x > 5",
+      "x >= 5",
+      "x < 5",
+      "x <= 5"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 5 >= 0."
+  },
+  {
+    "id": 508,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 509,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 510,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 2 la bao nhieu?",
+    "opts": [
+      "4",
+      "8",
+      "12",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 8."
+  },
+  {
+    "id": 511,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 3 + 5i la gi?",
+    "opts": [
+      "5.83",
+      "8",
+      "15",
+      "34"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 512,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 10, d = 3. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "18",
+      "19",
+      "20",
+      "21"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 513,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 4. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "5118",
+      "5120",
+      "5122",
+      "5124"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 514,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 515,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 4x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 4, thay x = 1 duoc 6."
+  },
+  {
+    "id": 516,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 1x^0 dx.",
+    "opts": [
+      "0",
+      "1",
+      "1",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 517,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 9) la gi?",
+    "opts": [
+      "x > 9",
+      "x >= 9",
+      "x < 9",
+      "x <= 9"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 9 >= 0."
+  },
+  {
+    "id": 518,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 519,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 520,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 521,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 4i la gi?",
+    "opts": [
+      "5.66",
+      "8",
+      "16",
+      "32"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 522,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 8, d = 1. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 523,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 4. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "1022",
+      "1024",
+      "1026",
+      "1028"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 524,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 525,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 4x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 4, thay x = 1 duoc 6."
+  },
+  {
+    "id": 526,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 527,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 528,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 529,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 530,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 3 la bao nhieu?",
+    "opts": [
+      "9",
+      "27",
+      "18",
+      "6"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 27."
+  },
+  {
+    "id": 531,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 4 + 5i la gi?",
+    "opts": [
+      "6.4",
+      "9",
+      "20",
+      "41"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 532,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 9, d = 2. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 533,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "62",
+      "64",
+      "66",
+      "68"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 534,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 535,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 9x^2 + 6x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "94",
+      "96",
+      "98",
+      "100"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 18x + 6, thay x = 5 duoc 96."
+  },
+  {
+    "id": 536,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 537,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 2) la gi?",
+    "opts": [
+      "x > 2",
+      "x >= 2",
+      "x < 2",
+      "x <= 2"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 2 >= 0."
+  },
+  {
+    "id": 538,
+    "topic": "Logarit",
+    "q": "Tinh log2(32).",
+    "opts": [
+      "4",
+      "5",
+      "6",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^5 = 32 nen log2(32) = 5."
+  },
+  {
+    "id": 539,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 540,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 541,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 6 + 4i la gi?",
+    "opts": [
+      "7.21",
+      "10",
+      "24",
+      "52"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 542,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 2. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 543,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 2. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "78",
+      "80",
+      "82",
+      "84"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 544,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 545,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 6x^2 + 3x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "13",
+      "15",
+      "17",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 12x + 3, thay x = 1 duoc 15."
+  },
+  {
+    "id": 546,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 547,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 6) la gi?",
+    "opts": [
+      "x > 6",
+      "x >= 6",
+      "x < 6",
+      "x <= 6"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 6 >= 0."
+  },
+  {
+    "id": 548,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 549,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 550,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 551,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 6 + 5i la gi?",
+    "opts": [
+      "7.81",
+      "11",
+      "30",
+      "61"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 552,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 6, d = 4. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "29",
+      "30",
+      "31",
+      "32"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 553,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 4, q = 4. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "62",
+      "64",
+      "66",
+      "68"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 554,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 555,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 2x^2 + 7x. Gia tri cua f'(2) la bao nhieu?",
+    "opts": [
+      "13",
+      "15",
+      "17",
+      "19"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 4x + 7, thay x = 2 duoc 15."
+  },
+  {
+    "id": 556,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 1x^0 dx.",
+    "opts": [
+      "0",
+      "1",
+      "1",
+      "2"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 557,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 558,
+    "topic": "Logarit",
+    "q": "Tinh log2(16).",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^4 = 16 nen log2(16) = 4."
+  },
+  {
+    "id": 559,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 560,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 561,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 7i la gi?",
+    "opts": [
+      "8.6",
+      "12",
+      "35",
+      "74"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 562,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 5, d = 4. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "20",
+      "21",
+      "22",
+      "23"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 563,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 5, q = 4. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "78",
+      "80",
+      "82",
+      "84"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 564,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 565,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 1x^2 + 3x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "7",
+      "9",
+      "11",
+      "13"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 2x + 3, thay x = 3 duoc 9."
+  },
+  {
+    "id": 566,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 3x^2 dx.",
+    "opts": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 567,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 3) la gi?",
+    "opts": [
+      "x > 3",
+      "x >= 3",
+      "x < 3",
+      "x <= 3"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 3 >= 0."
+  },
+  {
+    "id": 568,
+    "topic": "Logarit",
+    "q": "Tinh log2(8).",
+    "opts": [
+      "2",
+      "3",
+      "4",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^3 = 8 nen log2(8) = 3."
+  },
+  {
+    "id": 569,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 570,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 7 la bao nhieu?",
+    "opts": [
+      "49",
+      "343",
+      "42",
+      "14"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 343."
+  },
+  {
+    "id": 571,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 6i la gi?",
+    "opts": [
+      "10.0",
+      "14",
+      "48",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 572,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 4, d = 5. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 573,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 2, q = 2. Gia tri u3 la bao nhieu?",
+    "opts": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 574,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 575,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 3x. Gia tri cua f'(5) la bao nhieu?",
+    "opts": [
+      "81",
+      "83",
+      "85",
+      "87"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 3, thay x = 5 duoc 83."
+  },
+  {
+    "id": 576,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.",
+    "opts": [
+      "3",
+      "4",
+      "1",
+      "5"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 577,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 7) la gi?",
+    "opts": [
+      "x > 7",
+      "x >= 7",
+      "x < 7",
+      "x <= 7"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 7 >= 0."
+  },
+  {
+    "id": 578,
+    "topic": "Logarit",
+    "q": "Tinh log2(16).",
+    "opts": [
+      "3",
+      "4",
+      "5",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^4 = 16 nen log2(16) = 4."
+  },
+  {
+    "id": 579,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 580,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 5 la bao nhieu?",
+    "opts": [
+      "25",
+      "125",
+      "30",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 125."
+  },
+  {
+    "id": 581,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 5 + 7i la gi?",
+    "opts": [
+      "8.6",
+      "12",
+      "35",
+      "74"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 582,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 6, d = 1. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "12",
+      "13",
+      "14",
+      "15"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 583,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 3. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "25",
+      "27",
+      "29",
+      "31"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 584,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(45 do) la bao nhieu?",
+    "opts": [
+      "sqrt(2)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 585,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 3x^2 + 5x. Gia tri cua f'(3) la bao nhieu?",
+    "opts": [
+      "21",
+      "23",
+      "25",
+      "27"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 6x + 5, thay x = 3 duoc 23."
+  },
+  {
+    "id": 586,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 587,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 5) la gi?",
+    "opts": [
+      "x > 5",
+      "x >= 5",
+      "x < 5",
+      "x <= 5"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 5 >= 0."
+  },
+  {
+    "id": 588,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 589,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 590,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 591,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 8 + 6i la gi?",
+    "opts": [
+      "10.0",
+      "14",
+      "48",
+      "100"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 592,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 1. Gia tri u7 la bao nhieu?",
+    "opts": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 593,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 1, q = 4. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "62",
+      "64",
+      "66",
+      "68"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 594,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 595,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 8x^2 + 3x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "17",
+      "19",
+      "21",
+      "23"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 16x + 3, thay x = 1 duoc 19."
+  },
+  {
+    "id": 596,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 2x^1 dx.",
+    "opts": [
+      "1",
+      "2",
+      "1",
+      "3"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 597,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 2) la gi?",
+    "opts": [
+      "x > 2",
+      "x >= 2",
+      "x < 2",
+      "x <= 2"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 2 >= 0."
+  },
+  {
+    "id": 598,
+    "topic": "Logarit",
+    "q": "Tinh log2(4).",
+    "opts": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^2 = 4 nen log2(4) = 2."
+  },
+  {
+    "id": 599,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 600,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 4 la bao nhieu?",
+    "opts": [
+      "16",
+      "64",
+      "24",
+      "8"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 64."
+  },
+  {
+    "id": 601,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 1 + 5i la gi?",
+    "opts": [
+      "5.1",
+      "6",
+      "5",
+      "26"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 602,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 1, d = 1. Gia tri u8 la bao nhieu?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 603,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 2. Gia tri u6 la bao nhieu?",
+    "opts": [
+      "94",
+      "96",
+      "98",
+      "100"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 604,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(30 do) la bao nhieu?",
+    "opts": [
+      "1/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  },
+  {
+    "id": 605,
+    "topic": "Dao ham",
+    "q": "Cho f(x) = 6x^2 + 2x. Gia tri cua f'(1) la bao nhieu?",
+    "opts": [
+      "12",
+      "14",
+      "16",
+      "18"
+    ],
+    "ans": 1,
+    "exp": "f'(x) = 12x + 2, thay x = 1 duoc 14."
+  },
+  {
+    "id": 606,
+    "topic": "Tich phan",
+    "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.",
+    "opts": [
+      "4",
+      "5",
+      "1",
+      "6"
+    ],
+    "ans": 2,
+    "exp": "Ap dung cong thuc nguyen ham va thay can."
+  },
+  {
+    "id": 607,
+    "topic": "Ham so",
+    "q": "Tap xac dinh cua ham y = sqrt(x - 4) la gi?",
+    "opts": [
+      "x > 4",
+      "x >= 4",
+      "x < 4",
+      "x <= 4"
+    ],
+    "ans": 1,
+    "exp": "Dieu kien trong can khong am: x - 4 >= 0."
+  },
+  {
+    "id": 608,
+    "topic": "Logarit",
+    "q": "Tinh log2(64).",
+    "opts": [
+      "5",
+      "6",
+      "7",
+      "64"
+    ],
+    "ans": 1,
+    "exp": "Vi 2^6 = 64 nen log2(64) = 6."
+  },
+  {
+    "id": 609,
+    "topic": "Xac suat",
+    "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?",
+    "opts": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1"
+    ],
+    "ans": 2,
+    "exp": "Dong xu can doi co 2 kha nang dong deu."
+  },
+  {
+    "id": 610,
+    "topic": "Hinh hoc khong gian",
+    "q": "The tich hinh lap phuong canh 8 la bao nhieu?",
+    "opts": [
+      "64",
+      "512",
+      "48",
+      "16"
+    ],
+    "ans": 1,
+    "exp": "The tich hinh lap phuong bang a^3 = 512."
+  },
+  {
+    "id": 611,
+    "topic": "So phuc",
+    "q": "Mo dun cua so phuc z = 7 + 4i la gi?",
+    "opts": [
+      "8.06",
+      "11",
+      "28",
+      "65"
+    ],
+    "ans": 0,
+    "exp": "Mo dun z bang sqrt(a^2 + b^2)."
+  },
+  {
+    "id": 612,
+    "topic": "Cap so cong",
+    "q": "Cap so cong co a1 = 2, d = 2. Gia tri u4 la bao nhieu?",
+    "opts": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "ans": 1,
+    "exp": "un = a1 + (n-1)d."
+  },
+  {
+    "id": 613,
+    "topic": "Cap so nhan",
+    "q": "Cap so nhan co a1 = 3, q = 4. Gia tri u5 la bao nhieu?",
+    "opts": [
+      "766",
+      "768",
+      "770",
+      "772"
+    ],
+    "ans": 1,
+    "exp": "un = a1*q^(n-1)."
+  },
+  {
+    "id": 614,
+    "topic": "Luong giac",
+    "q": "Gia tri cua sin(60 do) la bao nhieu?",
+    "opts": [
+      "sqrt(3)/2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "ans": 0,
+    "exp": "Dung bang gia tri luong giac co ban."
+  }
+]

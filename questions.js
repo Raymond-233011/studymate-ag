@@ -1,0 +1,1 @@
+const QUESTIONS_DATA = {"Toán":[],"Vật lý":[],"Hóa học":[],"Tiếng Anh":[],"Ngữ văn":[]};
