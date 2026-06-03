@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>StudyMate AG – Trợ lý học tập THPT An Giang</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0e1a;color:#f1f5f9}
+input,button,select{font-family:inherit}
+@keyframes spin{to{transform:rotate(360deg)}}
+button:disabled{opacity:.4;cursor:not-allowed}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+// Supabase config
+const SUPA_URL = "https://hpplmooynerrlthfdbbd.supabase.co";
+const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwcGxtb295bmVycmx0aGZkYmJkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4MTk2NjcsImV4cCI6MjA5NTM5NTY2N30.ftUrYddIsLZf1X5QikT4Xb9bxL1JcMQCcIWtfxProzk";
+
+// Question bank
+const QUESTIONS_DATA = {"Toán": [{"id": 1000, "topic": "Đạo hàm", "q": "Cho f(x) = 8x^2 + 3x. Gia tri cua f'(1) la bao nhieu?", "opts": ["17.0", "19.0", "21.0", "23.0"], "ans": 1, "exp": "f'(x) = 16x + 3, thay x = 1 duoc 19."}, {"id": 1001, "topic": "Tích phân", "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.", "opts": ["4.0", "5.0", "1.0", "6.0"], "ans": 2, "exp": "Ap dung cong thuc nguyen ham va thay can."}, {"id": 1002, "topic": "Hàm số", "q": "Tap xac dinh cua ham y = sqrt(x - 6) la gi?", "opts": ["x > 6", "x >= 6", "x < 6", "x <= 6"], "ans": 1, "exp": "Dieu kien trong can khong am: x - 6 >= 0."}, {"id": 1003, "topic": "Logarit", "q": "Tinh log2(32).", "opts": ["4.0", "5.0", "6.0", "32.0"], "ans": 1, "exp": "Vi 2^5 = 32 nen log2(32) = 5."}, {"id": 1004, "topic": "Xác suất", "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?", "opts": ["1/4", "1/3", "1/2", "1.0"], "ans": 2, "exp": "Dong xu can doi co 2 kha nang dong deu."}, {"id": 1005, "topic": "Hinh hoc khong gian", "q": "The tich hinh lap phuong canh 6 la bao nhieu?", "opts": ["36.0", "216.0", "36.0", "12.0"], "ans": 1, "exp": "The tich hinh lap phuong bang a^3 = 216."}, {"id": 1006, "topic": "Số phức", "q": "Mo dun cua so phuc z = 1 + 6i la gi?", "opts": ["6.08", "7.0", "6.0", "37.0"], "ans": 0, "exp": "Mo dun z bang sqrt(a^2 + b^2)."}, {"id": 1007, "topic": "Cap so cong", "q": "Cap so cong co a1 = 3, d = 3. Gia tri u8 la bao nhieu?", "opts": ["23.0", "24.0", "25.0", "26.0"], "ans": 1, "exp": "un = a1 + (n-1)d."}, {"id": 1008, "topic": "Cap so nhan", "q": "Cap so nhan co a1 = 3, q = 4. Gia tri u3 la bao nhieu?", "opts": ["46.0", "48.0", "50.0", "52.0"], "ans": 1, "exp": "un = a1*q^(n-1)."}, {"id": 1009, "topic": "Lượng giác", "q": "Gia tri cua sin(30 do) la bao nhieu?", "opts": ["1/2", "0.0", "1.0", "-1.0"], "ans": 0, "exp": "Dung bang gia tri luong giac co ban."}, {"id": 1010, "topic": "Đạo hàm", "q": "Cho f(x) = 3x^2 + 2x. Gia tri cua f'(5) la bao nhieu?", "opts": ["30.0", "32.0", "34.0", "36.0"], "ans": 1, "exp": "f'(x) = 6x + 2, thay x = 5 duoc 32."}, {"id": 1011, "topic": "Tích phân", "q": "Tinh integral tu 0 den 1 cua 5x^4 dx.", "opts": ["4.0", "5.0", "1.0", "6.0"], "ans": 2, "exp": "Ap dung cong thuc nguyen ham va thay can."}, {"id": 1012, "topic": "Hàm số", "q": "Tap xac dinh cua ham y = sqrt(x - 2) la gi?", "opts": ["x > 2", "x >= 2", "x < 2", "x <= 2"], "ans": 1, "exp": "Dieu kien trong can khong am: x - 2 >= 0."}, {"id": 1013, "topic": "Logarit", "q": "Tinh log2(16).", "opts": ["3.0", "4.0", "5.0", "16.0"], "ans": 1, "exp": "Vi 2^4 = 16 nen log2(16) = 4."}, {"id": 1014, "topic": "Xác suất", "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?", "opts": ["1/4", "1/3", "1/2", "1.0"], "ans": 2, "exp": "Dong xu can doi co 2 kha nang dong deu."}, {"id": 1015, "topic": "Hinh hoc khong gian", "q": "The tich hinh lap phuong canh 2 la bao nhieu?", "opts": ["4.0", "8.0", "12.0", "4.0"], "ans": 1, "exp": "The tich hinh lap phuong bang a^3 = 8."}, {"id": 1016, "topic": "Số phức", "q": "Mo dun cua so phuc z = 2 + 1i la gi?", "opts": ["2.24", "3.0", "2.0", "5.0"], "ans": 0, "exp": "Mo dun z bang sqrt(a^2 + b^2)."}, {"id": 1017, "topic": "Cap so cong", "q": "Cap so cong co a1 = 2, d = 5. Gia tri u4 la bao nhieu?", "opts": ["16.0", "17.0", "18.0", "19.0"], "ans": 1, "exp": "un = a1 + (n-1)d."}, {"id": 1018, "topic": "Cap so nhan", "q": "Cap so nhan co a1 = 4, q = 3. Gia tri u4 la bao nhieu?", "opts": ["106.0", "108.0", "110.0", "112.0"], "ans": 1, "exp": "un = a1*q^(n-1)."}, {"id": 1019, "topic": "Lượng giác", "q": "Gia tri cua sin(60 do) la bao nhieu?", "opts": ["sqrt(3)/2", "0.0", "1.0", "-1.0"], "ans": 0, "exp": "Dung bang gia tri luong giac co ban."}, {"id": 1020, "topic": "Đạo hàm", "q": "Cho f(x) = 9x^2 + 5x. Gia tri cua f'(1) la bao nhieu?", "opts": ["21.0", "23.0", "25.0", "27.0"], "ans": 1, "exp": "f'(x) = 18x + 5, thay x = 1 duoc 23."}, {"id": 1021, "topic": "Tích phân", "q": "Tinh integral tu 0 den 1 cua 4x^3 dx.", "opts": ["3.0", "4.0", "1.0", "5.0"], "ans": 2, "exp": "Ap dung cong thuc nguyen ham va thay can."}, {"id": 1022, "topic": "Hàm số", "q": "Tap xac dinh cua ham y = sqrt(x - 1) la gi?", "opts": ["x > 1", "x >= 1", "x < 1", "x <= 1"], "ans": 1, "exp": "Dieu kien trong can khong am: x - 1 >= 0."}, {"id": 1023, "topic": "Logarit", "q": "Tinh log2(8).", "opts": ["2.0", "3.0", "4.0", "8.0"], "ans": 1, "exp": "Vi 2^3 = 8 nen log2(8) = 3."}, {"id": 1024, "topic": "Xác suất", "q": "Gieo 1 dong xu can doi. Xac suat xuat hien mat ngua la bao nhieu?", "opts": ["1/4", "1/3", "1/2", "1.0"], "ans": 2, "exp": "Dong xu can doi co 2 kha nang dong deu."}], "Vật lý": [{"id": 2000, "topic": "Cơ học", "q": "Mot vat chuyen dong deu voi van toc 20 m/s trong 5 s. Quang duong di duoc la bao nhieu?", "opts": ["90 m", "100 m", "110 m", "25 m"], "ans": 1, "exp": "Su dung cong thuc s = v*t."}, {"id": 2001, "topic": "Điện học", "q": "Mach dien co hieu dien the 13 V va dien tro 12 ohm. Cuong do dong dien la bao nhieu?", "opts": ["0.08", "1.08", "2.08", "25.0"], "ans": 1, "exp": "Ap dung dinh luat Ohm: I = U/R."}, {"id": 2002, "topic": "Sóng cơ", "q": "Mot song co tan so 17 Hz. Chu ki cua song la bao nhieu?", "opts": ["0.06", "17.0", "34.0", "1.06"], "ans": 0, "exp": "Chu ki T = 1/f."}, {"id": 2003, "topic": "Quang học", "q": "Anh sang mau do thuoc loai song nao?", "opts": ["Song co", "Song dien tu", "Song am", "Song nuoc"], "ans": 1, "exp": "Anh sang la mot dang song dien tu."}, {"id": 2004, "topic": "Hạt nhân", "q": "Hat nhan nao duoc dung pho bien trong nha may dien hat nhan?", "opts": ["Oxi", "Uranium", "Dong", "Sat"], "ans": 1, "exp": "Uranium la nhien lieu pho bien trong phan ung hat nhan."}, {"id": 2005, "topic": "Cơ học", "q": "Mot vat chuyen dong deu voi van toc 27 m/s trong 4 s. Quang duong di duoc la bao nhieu?", "opts": ["98 m", "108 m", "118 m", "31 m"], "ans": 1, "exp": "Su dung cong thuc s = v*t."}, {"id": 2006, "topic": "Điện học", "q": "Mach dien co hieu dien the 12 V va dien tro 5 ohm. Cuong do dong dien la bao nhieu?", "opts": ["1.4", "2.4", "3.4", "17.0"], "ans": 1, "exp": "Ap dung dinh luat Ohm: I = U/R."}, {"id": 2007, "topic": "Sóng cơ", "q": "Mot song co tan so 9 Hz. Chu ki cua song la bao nhieu?", "opts": ["0.11", "9.0", "18.0", "1.11"], "ans": 0, "exp": "Chu ki T = 1/f."}, {"id": 2008, "topic": "Quang học", "q": "Anh sang mau lam thuoc loai song nao?", "opts": ["Song co", "Song dien tu", "Song am", "Song nuoc"], "ans": 1, "exp": "Anh sang la mot dang song dien tu."}, {"id": 2009, "topic": "Hạt nhân", "q": "Hat nhan nao duoc dung pho bien trong nha may dien hat nhan?", "opts": ["Oxi", "Uranium", "Dong", "Sat"], "ans": 1, "exp": "Uranium la nhien lieu pho bien trong phan ung hat nhan."}, {"id": 2010, "topic": "Cơ học", "q": "Mot vat chuyen dong deu voi van toc 21 m/s trong 2 s. Quang duong di duoc la bao nhieu?", "opts": ["32 m", "42 m", "52 m", "23 m"], "ans": 1, "exp": "Su dung cong thuc s = v*t."}, {"id": 2011, "topic": "Điện học", "q": "Mach dien co hieu dien the 12 V va dien tro 6 ohm. Cuong do dong dien la bao nhieu?", "opts": ["1.0", "2.0", "3.0", "18.0"], "ans": 1, "exp": "Ap dung dinh luat Ohm: I = U/R."}, {"id": 2012, "topic": "Sóng cơ", "q": "Mot song co tan so 19 Hz. Chu ki cua song la bao nhieu?", "opts": ["0.05", "19.0", "38.0", "1.05"], "ans": 0, "exp": "Chu ki T = 1/f."}, {"id": 2013, "topic": "Quang học", "q": "Anh sang mau lam thuoc loai song nao?", "opts": ["Song co", "Song dien tu", "Song am", "Song nuoc"], "ans": 1, "exp": "Anh sang la mot dang song dien tu."}, {"id": 2014, "topic": "Hạt nhân", "q": "Hat nhan nao duoc dung pho bien trong nha may dien hat nhan?", "opts": ["Oxi", "Uranium", "Dong", "Sat"], "ans": 1, "exp": "Uranium la nhien lieu pho bien trong phan ung hat nhan."}, {"id": 2015, "topic": "Cơ học", "q": "Mot vat chuyen dong deu voi van toc 27 m/s trong 8 s. Quang duong di duoc la bao nhieu?", "opts": ["206 m", "216 m", "226 m", "35 m"], "ans": 1, "exp": "Su dung cong thuc s = v*t."}, {"id": 2016, "topic": "Điện học", "q": "Mach dien co hieu dien the 7 V va dien tro 10 ohm. Cuong do dong dien la bao nhieu?", "opts": ["-0.3", "0.7", "1.7", "17.0"], "ans": 1, "exp": "Ap dung dinh luat Ohm: I = U/R."}, {"id": 2017, "topic": "Sóng cơ", "q": "Mot song co tan so 20 Hz. Chu ki cua song la bao nhieu?", "opts": ["0.05", "20.0", "40.0", "1.05"], "ans": 0, "exp": "Chu ki T = 1/f."}, {"id": 2018, "topic": "Quang học", "q": "Anh sang mau vang thuoc loai song nao?", "opts": ["Song co", "Song dien tu", "Song am", "Song nuoc"], "ans": 1, "exp": "Anh sang la mot dang song dien tu."}, {"id": 2019, "topic": "Hạt nhân", "q": "Hat nhan nao duoc dung pho bien trong nha may dien hat nhan?", "opts": ["Oxi", "Uranium", "Dong", "Sat"], "ans": 1, "exp": "Uranium la nhien lieu pho bien trong phan ung hat nhan."}, {"id": 2020, "topic": "Cơ học", "q": "Mot vat chuyen dong deu voi van toc 21 m/s trong 4 s. Quang duong di duoc la bao nhieu?", "opts": ["74 m", "84 m", "94 m", "25 m"], "ans": 1, "exp": "Su dung cong thuc s = v*t."}, {"id": 2021, "topic": "Điện học", "q": "Mach dien co hieu dien the 8 V va dien tro 2 ohm. Cuong do dong dien la bao nhieu?", "opts": ["3.0", "4.0", "5.0", "10.0"], "ans": 1, "exp": "Ap dung dinh luat Ohm: I = U/R."}, {"id": 2022, "topic": "Sóng cơ", "q": "Mot song co tan so 4 Hz. Chu ki cua song la bao nhieu?", "opts": ["0.25", "4.0", "8.0", "1.25"], "ans": 0, "exp": "Chu ki T = 1/f."}, {"id": 2023, "topic": "Quang học", "q": "Anh sang mau lam thuoc loai song nao?", "opts": ["Song co", "Song dien tu", "Song am", "Song nuoc"], "ans": 1, "exp": "Anh sang la mot dang song dien tu."}, {"id": 2024, "topic": "Hạt nhân", "q": "Hat nhan nao duoc dung pho bien trong nha may dien hat nhan?", "opts": ["Oxi", "Uranium", "Dong", "Sat"], "ans": 1, "exp": "Uranium la nhien lieu pho bien trong phan ung hat nhan."}], "Hóa học": [{"id": 3000, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 6 nguyen tu C la gi?", "opts": ["C6H12", "C6H14", "C6H16", "C6H6"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3001, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3002, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3003, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 6 nguyen tu C la gi?", "opts": ["C6H12", "C6H14", "C6H16", "C6H6"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3004, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3005, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3006, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 5 nguyen tu C la gi?", "opts": ["C5H10", "C5H12", "C5H14", "C5H5"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3007, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3008, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3009, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 4 nguyen tu C la gi?", "opts": ["C4H8", "C4H10", "C4H12", "C4H4"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3010, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3011, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3012, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 5 nguyen tu C la gi?", "opts": ["C5H10", "C5H12", "C5H14", "C5H5"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3013, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3014, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3015, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 1 nguyen tu C la gi?", "opts": ["C1H2", "C1H4", "C1H6", "C1H1"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3016, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3017, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3018, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 5 nguyen tu C la gi?", "opts": ["C5H10", "C5H12", "C5H14", "C5H5"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3019, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3020, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3021, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 2 nguyen tu C la gi?", "opts": ["C2H4", "C2H6", "C2H8", "C2H2"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}, {"id": 3022, "topic": "Vô cơ", "q": "Chat nao sau day la axit?", "opts": ["NaOH", "HCl", "NaCl", "KOH"], "ans": 1, "exp": "HCl la mot axit manh."}, {"id": 3023, "topic": "Điện hóa", "q": "Trong qua trinh dien phan, cuc am duoc goi la gi?", "opts": ["Anot", "Catot", "Dien cuc duong", "Mach ngoai"], "ans": 1, "exp": "Cuc am trong dien phan la catot."}, {"id": 3024, "topic": "Hữu cơ", "q": "Cong thuc phan tu cua ankan co 5 nguyen tu C la gi?", "opts": ["C5H10", "C5H12", "C5H14", "C5H5"], "ans": 1, "exp": "Cong thuc chung cua ankan la CnH2n+2."}], "Tiếng Anh": [{"id": 30, "topic": "Grammar", "q": "She ___ to school every day.", "opts": ["goes", "go", "going", "went"], "ans": 0, "exp": "Thì hiện tại đơn, ngôi 3 số ít thêm -s."}, {"id": 31, "topic": "Vocabulary", "q": "The synonym of 'happy' is:", "opts": ["joyful", "sad", "angry", "tired"], "ans": 0, "exp": "Joyful = vui vẻ."}, {"id": 32, "topic": "Conditional", "q": "If I ___ rich, I would travel the world.", "opts": ["were", "am", "was", "be"], "ans": 0, "exp": "Câu điều kiện loại 2: If + were, would + V."}, {"id": 33, "topic": "Passive", "q": "The book ___ by millions of people.", "opts": ["was read", "read", "is reading", "reads"], "ans": 0, "exp": "Bị động quá khứ: was + V3."}, {"id": 34, "topic": "Vocabulary", "q": "Which word means 'very large'?", "opts": ["enormous", "tiny", "narrow", "shallow"], "ans": 0, "exp": "Enormous = rất lớn."}], "Ngữ văn": [{"id": 40, "topic": "Văn học", "q": "'Truyện Kiều' do ai sáng tác?", "opts": ["Nguyễn Du", "Nguyễn Trãi", "Hồ Xuân Hương", "Nguyễn Khuyến"], "ans": 0, "exp": "Nguyễn Du (1765–1820)."}, {"id": 41, "topic": "Tiếng Việt", "q": "Biện pháp tu từ nào là so sánh ngầm?", "opts": ["Ẩn dụ", "Hoán dụ", "So sánh", "Nhân hóa"], "ans": 0, "exp": "Ẩn dụ: gọi A bằng tên B tương đồng."}, {"id": 42, "topic": "Văn học", "q": "'Chí Phèo' của Nam Cao xuất bản năm nào?", "opts": ["1941", "1945", "1930", "1954"], "ans": 0, "exp": "Năm 1941."}, {"id": 43, "topic": "Tiếng Việt", "q": "'Ông mặt trời' dùng biện pháp tu từ nào?", "opts": ["Nhân hóa", "Ẩn dụ", "Hoán dụ", "Điệp ngữ"], "ans": 0, "exp": "Nhân hóa: gọi vật vô tri bằng từ người."}, {"id": 44, "topic": "Văn học", "q": "Tác giả 'Tắt đèn' là ai?", "opts": ["Ngô Tất Tố", "Nam Cao", "Vũ Trọng Phụng", "Nguyên Hồng"], "ans": 0, "exp": "Ngô Tất Tố, 1939."}]};
+
+// AI helper - calls /api/ai proxy (Vercel serverless)
+async function callAI(payload) {
+  const prompt = `Bạn là trợ lý học tập thông minh cho học sinh THPT tỉnh An Giang. Phân tích học lực và đưa ra gợi ý CỤ THỂ.
+
+Dữ liệu:
+${JSON.stringify(payload, null, 2)}
+
+Trả về JSON ĐÚNG cấu trúc (không thêm text nào khác):
+{"nhanXet":"Nhận xét 2-3 câu","diemManh":["điểm mạnh 1","điểm mạnh 2"],"diemYeu":["điểm yếu 1","điểm yếu 2"],"goiY":["Gợi ý 1","Gợi ý 2","Gợi ý 3"],"loTrinh":"Lộ trình 4 tuần"}`;
+
+  const res = await fetch('/api/ai', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 1000,
+      messages: [{ role: 'user', content: prompt }]
+    })
+  });
+  if (!res.ok) throw new Error('Lỗi API: ' + res.status);
+  const d = await res.json();
+  if (d.error) throw new Error(d.error);
+  const text = d.content?.map(i => i.text || '').join('') || '';
+  return JSON.parse(text.replace(/```json|```/g, '').trim());
+}
+</script>
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useMemo } = React;
+const QUESTIONS = QUESTIONS_DATA;
+const SUBJECTS = Object.keys(QUESTIONS);
+
+// ── SUPABASE ──────────────────────────────────────────────────────────────────
+const SB_HEADERS = {
+  "Content-Type": "application/json",
+  "apikey": SUPA_KEY,
+  "Authorization": "Bearer " + SUPA_KEY,
+  "Prefer": "return=representation"
+};
+const db = {
+  async get(table, q="") {
+    const r = await fetch(SUPA_URL+"/rest/v1/"+table+"?"+q, {headers: SB_HEADERS});
+    if (!r.ok) throw new Error(await r.text());
+    return r.json();
+  },
+  async post(table, body) {
+    const r = await fetch(SUPA_URL+"/rest/v1/"+table, {method:"POST",headers:SB_HEADERS,body:JSON.stringify(body)});
+    if (!r.ok) throw new Error(await r.text());
+    return r.json();
+  }
+};
+
+// ── HELPERS ───────────────────────────────────────────────────────────────────
+function calcTBM(sc) {
+  if (!sc) return null;
+  const avg = arr => arr&&arr.length ? arr.reduce((a,b)=>a+b,0)/arr.length : null;
+  const tx = avg([...(sc.diemMieng||[]),...(sc.diemTX||[])]);
+  const ck = sc.diemCK??null, gk = sc.diemGK??null;
+  if (tx===null||ck===null) return null;
+  return parseFloat((gk!==null?(tx*3+gk*2+ck*3)/8:(tx*3+ck*5)/8).toFixed(1));
+}
+function classify(t) {
+  if (t===null||t===undefined) return {label:"Chưa đủ dữ liệu",color:"#64748b"};
+  if (t>=8) return {label:"Giỏi",color:"#4ade80"};
+  if (t>=6.5) return {label:"Khá",color:"#38bdf8"};
+  if (t>=5) return {label:"Trung bình",color:"#fbbf24"};
+  return {label:"Yếu",color:"#f87171"};
+}
+function shuffle(arr) {
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}
+  return a;
+}
+function getRandQs(subject, count) { return shuffle(QUESTIONS[subject]||[]).slice(0,count); }
+
+// ── DESIGN TOKENS ─────────────────────────────────────────────────────────────
+const C={bg:"#0a0e1a",surf:"#111827",surf2:"#1a2235",border:"#1e2d45",
+  accent:"#38bdf8",green:"#4ade80",yellow:"#fbbf24",red:"#f87171",purple:"#c084fc",muted:"#64748b",text:"#f1f5f9"};
+
+const st = {
+  app: {minHeight:"100vh",background:C.bg,color:C.text,maxWidth:480,margin:"0 auto",paddingBottom:80},
+  hdr: {padding:"16px 16px 12px",background:"linear-gradient(180deg,#0d1829,#0a0e1a)",borderBottom:"1px solid "+C.border},
+  logo: {fontSize:18,fontWeight:800,background:"linear-gradient(90deg,#38bdf8,#c084fc)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"},
+  card: {background:C.surf,border:"1px solid "+C.border,borderRadius:14,padding:16,margin:"10px 14px"},
+  sec: {fontSize:11,fontWeight:700,color:C.muted,textTransform:"uppercase",letterSpacing:".9px",margin:"14px 14px 6px"},
+  nav: {position:"fixed",bottom:0,left:"50%",transform:"translateX(-50%)",width:"100%",maxWidth:480,background:C.surf,borderTop:"1px solid "+C.border,display:"flex",zIndex:100},
+  input: {background:C.surf2,border:"1px solid "+C.border,borderRadius:10,padding:"12px 14px",color:C.text,fontSize:14,width:"100%",outline:"none"},
+  hero: {background:"linear-gradient(135deg,#111f3c,#0a0e1a)",border:"1px solid "+C.accent+"33",borderRadius:16,padding:"20px 16px",margin:"10px 14px",textAlign:"center"},
+  spin: {width:20,height:20,border:"3px solid "+C.border,borderTopColor:C.purple,borderRadius:"50%",animation:"spin .7s linear infinite",display:"inline-block"},
+  err: {background:C.red+"15",border:"1px solid "+C.red+"30",borderRadius:10,padding:"10px 12px",fontSize:13,color:C.red,margin:"8px 14px"},
+};
+const btn = (bg,color="#0a0e1a",full=true) => ({display:"inline-flex",alignItems:"center",justifyContent:"center",gap:6,padding:"11px 16px",borderRadius:10,border:"none",cursor:"pointer",fontSize:13,fontWeight:700,background:bg,color:color,width:full?"100%":"auto",transition:".15s"});
+const btnOut = (full=true) => ({...btn("transparent",C.text,full),border:"1px solid "+C.border});
+const btnSm = (bg,color="#0a0e1a") => ({display:"inline-flex",alignItems:"center",justifyContent:"center",gap:5,padding:"7px 12px",borderRadius:8,border:"none",cursor:"pointer",fontSize:12,fontWeight:700,background:bg,color});
+const badge = (c) => ({display:"inline-flex",alignItems:"center",padding:"3px 9px",borderRadius:20,fontSize:11,fontWeight:700,background:c+"18",color:c,border:"1px solid "+c+"35"});
+const tag = (c) => ({padding:"2px 8px",borderRadius:20,fontSize:11,fontWeight:700,background:c+"15",color:c,border:"1px solid "+c+"30",display:"inline-flex"});
+const nb = (on) => ({flex:1,padding:"10px 4px 8px",display:"flex",flexDirection:"column",alignItems:"center",gap:3,border:"none",background:"transparent",color:on?C.accent:C.muted,cursor:"pointer",fontSize:10,fontWeight:600});
+const opt = (sel) => ({display:"flex",alignItems:"flex-start",gap:10,padding:"11px 13px",border:"1px solid "+(sel?C.accent:C.border),borderRadius:10,cursor:"pointer",marginBottom:7,background:sel?C.accent+"10":"transparent"});
+const DEF = {
+  "Toán":      {diemMieng:[8,7],diemTX:[7,8,6],diemGK:7.5,diemCK:8},
+  "Vật lý":    {diemMieng:[6],  diemTX:[6,7,5],diemGK:6,  diemCK:6.5},
+  "Hóa học":   {diemMieng:[7,8],diemTX:[7,8],  diemGK:7,  diemCK:7.5},
+  "Tiếng Anh": {diemMieng:[9],  diemTX:[8,9,9],diemGK:8.5,diemCK:9},
+  "Ngữ văn":   {diemMieng:[6,7],diemTX:[6,6,7],diemGK:6.5,diemCK:6},
+};
+
+// ══════════════════════════════════════════════════════════════════════════════
+// ROLE SELECT
+// ══════════════════════════════════════════════════════════════════════════════
+function RoleSelect({onSelect}) {
+  const roles = [
+    {role:"student",icon:"🎓",title:"Học sinh",desc:"Nhập mã lớp, làm bài được giao"},
+    {role:"teacher",icon:"👨‍🏫",title:"Giáo viên",desc:"Tạo lớp, giao bài, xem kết quả"},
+    {role:"guest",  icon:"📚",title:"Tự luyện tập",desc:"Luyện đề, theo dõi điểm TBM"},
+  ];
+  return (
+    <div style={{minHeight:"100vh",background:C.bg,color:C.text,maxWidth:480,margin:"0 auto",display:"flex",flexDirection:"column",justifyContent:"center",padding:"0 20px",gap:14}}>
+      <div style={{textAlign:"center",marginBottom:8}}>
+        <div style={{...st.logo,fontSize:26,display:"block",marginBottom:6}}>StudyMate AG</div>
+        <div style={{fontSize:13,color:C.muted}}>Trợ lý học tập thông minh · THPT An Giang</div>
+      </div>
+      {roles.map(r => (
+        <button key={r.role} onClick={()=>onSelect(r.role)}
+          style={{background:C.surf,border:"1px solid "+C.border,borderRadius:14,padding:"16px 18px",cursor:"pointer",textAlign:"left",display:"flex",alignItems:"center",gap:14}}>
+          <span style={{fontSize:28}}>{r.icon}</span>
+          <div style={{flex:1}}>
+            <div style={{fontSize:15,fontWeight:700,color:C.text}}>{r.title}</div>
+            <div style={{fontSize:12,color:C.muted,marginTop:2}}>{r.desc}</div>
+          </div>
+          <span style={{color:C.muted,fontSize:18}}>›</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// TEACHER LOGIN / CREATE
+// ══════════════════════════════════════════════════════════════════════════════
+function TeacherLogin({onLogin, onBack}) {
+  const [mode, setMode] = useState("login");
+  const [form, setForm] = useState({name:"",code:"",pass:"",pass2:""});
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  const set = (k,v) => setForm(f=>({...f,[k]:v}));
+
+  async function handleLogin() {
+    if (!form.code||!form.pass) return setError("Vui lòng nhập đủ thông tin");
+    setLoading(true); setError("");
+    try {
+      const rows = await db.get("classes","code=eq."+form.code.toUpperCase()+"&select=*");
+      if (!rows.length) return setError("Không tìm thấy mã lớp");
+      if (rows[0].password !== form.pass) return setError("Sai mật khẩu");
+      onLogin(rows[0]);
+    } catch(e) { setError(e.message); }
+    setLoading(false);
+  }
+
+  async function handleCreate() {
+    if (!form.name||!form.code||!form.pass) return setError("Nhập đủ thông tin");
+    if (form.pass !== form.pass2) return setError("Mật khẩu không khớp");
+    if (form.code.length < 4) return setError("Mã lớp phải từ 4 ký tự");
+    setLoading(true); setError("");
+    try {
+      const rows = await db.post("classes",{code:form.code.toUpperCase(),teacher_name:form.name,password:form.pass});
+      onLogin(rows[0]);
+    } catch(e) { setError(e.message.includes("unique")?"Mã lớp đã tồn tại":e.message); }
+    setLoading(false);
+  }
+
+  const Field = ({k,ph,type="text"}) => (
+    <input style={{...st.input,marginBottom:10}} placeholder={ph} type={type}
+      value={form[k]} onChange={e=>set(k,e.target.value)}/>
+  );
+
+  return (
+    <div style={{...st.app,padding:"20px 16px"}}>
+      <button onClick={onBack} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:13,marginBottom:16}}>← Quay lại</button>
+      <div style={{...st.logo,fontSize:20,marginBottom:4}}>👨‍🏫 Giáo viên</div>
+      <div style={{fontSize:12,color:C.muted,marginBottom:20}}>Quản lý lớp học và bài tập</div>
+      <div style={{display:"flex",gap:8,marginBottom:20}}>
+        {["login","create"].map(m=>(
+          <button key={m} onClick={()=>{setMode(m);setError("");}}
+            style={{...btnSm(m===mode?C.accent:"transparent",m===mode?"#0a0e1a":C.muted),border:"1px solid "+(m===mode?C.accent:C.border),flex:1}}>
+            {m==="login"?"Đăng nhập":"Tạo lớp mới"}
+          </button>
+        ))}
+      </div>
+      {mode==="create" && <Field k="name" ph="Tên giáo viên"/>}
+      <Field k="code" ph="Mã lớp (VD: TOAN12A)"/>
+      <Field k="pass" ph="Mật khẩu" type="password"/>
+      {mode==="create" && <Field k="pass2" ph="Xác nhận mật khẩu" type="password"/>}
+      {error && <div style={{...st.err,margin:"0 0 10px"}}>⚠️ {error}</div>}
+      <button style={btn(C.accent)} disabled={loading} onClick={mode==="login"?handleLogin:handleCreate}>
+        {loading ? <span style={st.spin}/> : (mode==="login"?"Đăng nhập":"Tạo lớp")}
+      </button>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// STUDENT LOGIN
+// ══════════════════════════════════════════════════════════════════════════════
+function StudentLogin({onLogin, onBack}) {
+  const [code, setCode] = useState("");
+  const [name, setName] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleJoin() {
+    if (!code||!name.trim()) return setError("Nhập đủ mã lớp và họ tên");
+    setLoading(true); setError("");
+    try {
+      const rows = await db.get("classes","code=eq."+code.toUpperCase()+"&select=*");
+      if (!rows.length) return setError("Không tìm thấy mã lớp");
+      onLogin(rows[0], name.trim());
+    } catch(e) { setError(e.message); }
+    setLoading(false);
+  }
+
+  return (
+    <div style={{...st.app,padding:"20px 16px"}}>
+      <button onClick={onBack} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:13,marginBottom:16}}>← Quay lại</button>
+      <div style={{...st.logo,fontSize:20,marginBottom:4}}>🎓 Học sinh</div>
+      <div style={{fontSize:12,color:C.muted,marginBottom:20}}>Nhập mã lớp từ giáo viên</div>
+      <input style={{...st.input,marginBottom:10,textTransform:"uppercase"}} placeholder="Mã lớp (VD: TOAN12A)"
+        value={code} onChange={e=>setCode(e.target.value)}/>
+      <input style={{...st.input,marginBottom:10}} placeholder="Họ và tên của bạn"
+        value={name} onChange={e=>setName(e.target.value)}/>
+      {error && <div style={{...st.err,margin:"0 0 10px"}}>⚠️ {error}</div>}
+      <button style={btn(C.accent)} disabled={loading} onClick={handleJoin}>
+        {loading ? <span style={st.spin}/> : "Vào lớp →"}
+      </button>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// TEACHER DASHBOARD
+// ══════════════════════════════════════════════════════════════════════════════
+function TeacherDashboard({cls, onBack}) {
+  const [tab, setTab] = useState("list");
+  const [assignments, setAssignments] = useState([]);
+  const [form, setForm] = useState({title:"",subject:SUBJECTS[0],num:10,deadline:""});
+  const [selected, setSelected] = useState(null);
+  const [submissions, setSubmissions] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(()=>{ loadAssignments(); },[]);
+
+  async function loadAssignments() {
+    setLoading(true);
+    try { setAssignments(await db.get("assignments","class_id=eq."+cls.id+"&order=created_at.desc")); }
+    catch(e) { setError(e.message); }
+    setLoading(false);
+  }
+
+  async function createAssignment() {
+    if (!form.title.trim()) return setError("Nhập tên bài tập");
+    setSaving(true); setError("");
+    try {
+      await db.post("assignments",{class_id:cls.id,title:form.title,subject:form.subject,num_questions:parseInt(form.num),deadline:form.deadline||null});
+      setForm({title:"",subject:SUBJECTS[0],num:10,deadline:""});
+      setTab("list");
+      await loadAssignments();
+    } catch(e) { setError(e.message); }
+    setSaving(false);
+  }
+
+  async function viewResults(a) {
+    setSelected(a); setTab("results");
+    try { setSubmissions(await db.get("submissions","assignment_id=eq."+a.id+"&order=submitted_at.desc")); }
+    catch(e) { setError(e.message); }
+  }
+
+  const TABS = [["list","📋 Bài tập"],["create","➕ Giao bài"],["results","📊 Kết quả"]];
+
+  return (
+    <div style={st.app}>
+      <div style={st.hdr}>
+        <div style={{display:"flex",alignItems:"center",gap:10}}>
+          <button onClick={onBack} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:18}}>←</button>
+          <div>
+            <div style={{...st.logo,fontSize:16}}>👨‍🏫 {cls.teacher_name}</div>
+            <div style={{fontSize:11,color:C.muted}}>Mã lớp: <strong style={{color:C.accent}}>{cls.code}</strong> · Chia sẻ mã này cho học sinh</div>
+          </div>
+        </div>
+      </div>
+
+      <div style={{display:"flex",gap:8,padding:"12px 14px 0"}}>
+        {TABS.map(([t,lbl])=>(
+          <button key={t} onClick={()=>setTab(t)}
+            style={{...btnSm(t===tab?C.accent:"transparent",t===tab?"#0a0e1a":C.muted),border:"1px solid "+(t===tab?C.accent:C.border),flex:1,fontSize:11}}>
+            {lbl}
+          </button>
+        ))}
+      </div>
+
+      {error && <div style={st.err}>⚠️ {error}</div>}
+
+      {/* CREATE TAB */}
+      {tab==="create" && (
+        <div style={st.card}>
+          <div style={{fontSize:14,fontWeight:700,marginBottom:14}}>Giao bài tập mới</div>
+          {[
+            {lbl:"Tên bài tập",node:<input style={{...st.input,marginBottom:12}} placeholder="VD: Kiểm tra 15 phút Đạo hàm" value={form.title} onChange={e=>setForm(f=>({...f,title:e.target.value}))}/>},
+            {lbl:"Môn học",node:(
+              <select style={{...st.input,marginBottom:12}} value={form.subject} onChange={e=>setForm(f=>({...f,subject:e.target.value}))}>
+                {SUBJECTS.map(s=><option key={s} value={s}>{s} ({QUESTIONS[s].length} câu)</option>)}
+              </select>
+            )},
+            {lbl:"Số câu",node:(
+              <select style={{...st.input,marginBottom:12}} value={form.num} onChange={e=>setForm(f=>({...f,num:e.target.value}))}>
+                {[5,10,15,20,25].map(n=><option key={n} value={n}>{n} câu</option>)}
+              </select>
+            )},
+            {lbl:"Deadline (tuỳ chọn)",node:<input style={{...st.input,marginBottom:14}} type="datetime-local" value={form.deadline} onChange={e=>setForm(f=>({...f,deadline:e.target.value}))}/>},
+          ].map(({lbl,node})=>(
+            <div key={lbl}>
+              <div style={{fontSize:10,color:C.muted,fontWeight:700,textTransform:"uppercase",marginBottom:4}}>{lbl}</div>
+              {node}
+            </div>
+          ))}
+          <button style={btn(C.accent)} disabled={saving} onClick={createAssignment}>
+            {saving ? <span style={st.spin}/> : "✅ Giao bài"}
+          </button>
+        </div>
+      )}
+
+      {/* LIST TAB */}
+      {tab==="list" && (
+        loading ? <div style={{textAlign:"center",padding:40}}><span style={st.spin}/></div> :
+        assignments.length===0 ? <div style={{textAlign:"center",padding:"40px 20px",color:C.muted,fontSize:13}}>Chưa có bài tập. Nhấn "Giao bài" để tạo.</div> :
+        <div style={{...st.card,padding:"4px 0"}}>
+          {assignments.map((a,i)=>(
+            <div key={a.id} style={{padding:"12px 14px",borderBottom:i<assignments.length-1?"1px solid "+C.border:"none"}}>
+              <div style={{display:"flex",alignItems:"flex-start",gap:10}}>
+                <div style={{flex:1}}>
+                  <div style={{fontSize:13,fontWeight:700,marginBottom:5}}>{a.title}</div>
+                  <div style={{display:"flex",gap:5,flexWrap:"wrap"}}>
+                    <span style={tag(C.accent)}>{a.subject}</span>
+                    <span style={tag(C.purple)}>{a.num_questions} câu</span>
+                    {a.deadline && <span style={tag(C.yellow)}>⏰ {new Date(a.deadline).toLocaleDateString("vi")}</span>}
+                  </div>
+                </div>
+                <button onClick={()=>viewResults(a)} style={btnSm(C.surf2,C.accent)}>📊 KQ</button>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {/* RESULTS TAB */}
+      {tab==="results" && (
+        selected ? (
+          <>
+            <div style={st.card}>
+              <div style={{fontSize:14,fontWeight:700}}>{selected.title}</div>
+              <div style={{fontSize:12,color:C.muted,marginTop:4}}>{selected.subject} · {selected.num_questions} câu</div>
+            </div>
+            {submissions.length===0
+              ? <div style={{textAlign:"center",padding:"30px 20px",color:C.muted,fontSize:13}}>Chưa có học sinh nộp bài</div>
+              : <div style={{...st.card,padding:"4px 0"}}>
+                  <div style={{padding:"8px 14px",borderBottom:"1px solid "+C.border,display:"flex",justifyContent:"space-between"}}>
+                    <span style={{fontSize:11,fontWeight:700,color:C.muted}}>HỌC SINH</span>
+                    <span style={{fontSize:11,fontWeight:700,color:C.muted}}>KẾT QUẢ</span>
+                  </div>
+                  {submissions.map((s,i)=>{
+                    const pct=Math.round(s.score/s.total*100);
+                    const c=pct>=70?C.green:pct>=50?C.yellow:C.red;
+                    return (
+                      <div key={s.id} style={{padding:"10px 14px",borderBottom:i<submissions.length-1?"1px solid "+C.border:"none",display:"flex",alignItems:"center",gap:10}}>
+                        <div style={{flex:1}}>
+                          <div style={{fontSize:13,fontWeight:600}}>{s.student_name}</div>
+                          <div style={{fontSize:11,color:C.muted}}>{new Date(s.submitted_at).toLocaleString("vi")}</div>
+                        </div>
+                        <div style={{textAlign:"right"}}>
+                          <div style={{fontSize:16,fontWeight:800,fontFamily:"monospace",color:c}}>{s.score}/{s.total}</div>
+                          <div style={{fontSize:11,color:c}}>{pct}%</div>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+            }
+          </>
+        ) : <div style={{textAlign:"center",padding:"30px 20px",color:C.muted,fontSize:13}}>Chọn bài tập ở tab "Bài tập" rồi nhấn 📊 KQ</div>
+      )}
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// STUDENT DASHBOARD
+// ══════════════════════════════════════════════════════════════════════════════
+function StudentDashboard({cls, studentName, onBack}) {
+  const [assignments, setAssignments] = useState([]);
+  const [doneIds, setDoneIds] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [doing, setDoing] = useState(null);
+  const [qs, setQs] = useState([]);
+  const [answers, setAnswers] = useState({});
+  const [qIdx, setQIdx] = useState(0);
+  const [result, setResult] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(()=>{ loadData(); },[]);
+
+  async function loadData() {
+    setLoading(true);
+    try {
+      const [asgn, subs] = await Promise.all([
+        db.get("assignments","class_id=eq."+cls.id+"&order=created_at.desc"),
+        db.get("submissions","student_name=eq."+encodeURIComponent(studentName))
+      ]);
+      setAssignments(asgn);
+      setDoneIds(subs.map(s=>s.assignment_id));
+    } catch(e) { setError(e.message); }
+    setLoading(false);
+  }
+
+  function startAssignment(a) {
+    setQs(getRandQs(a.subject,a.num_questions));
+    setAnswers({}); setQIdx(0); setResult(null); setDoing(a);
+  }
+
+  async function submitAssignment() {
+    setSubmitting(true);
+    const correct = qs.filter(q=>answers[q.id]===q.ans).length;
+    try {
+      await db.post("submissions",{assignment_id:doing.id,student_name:studentName,score:correct,total:qs.length,answers:{}});
+      setResult({correct,total:qs.length});
+      setDoneIds(d=>[...d,doing.id]);
+    } catch(e) { setError(e.message); }
+    setSubmitting(false);
+  }
+
+  // Exam screen
+  if (doing && !result) {
+    const q=qs[qIdx], answered=answers[q.id]!==undefined, pct=(qIdx/qs.length)*100;
+    return (
+      <div style={st.app}>
+        <div style={st.hdr}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+            <div style={{...st.logo,fontSize:14}}>{doing.subject}</div>
+            <div style={{fontSize:12,color:C.muted,fontFamily:"monospace",fontWeight:600}}>{qIdx+1}/{qs.length}</div>
+          </div>
+          <div style={{fontSize:11,color:C.muted,marginTop:3}}>{doing.title}</div>
+        </div>
+        <div style={{height:3,background:C.border,margin:"0 14px 10px"}}>
+          <div style={{height:"100%",background:"linear-gradient(90deg,"+C.accent+","+C.purple+")",width:pct+"%",transition:"width .3s"}}/>
+        </div>
+        <div style={st.card}>
+          <div style={{fontSize:10,color:C.purple,fontWeight:800,marginBottom:8,textTransform:"uppercase"}}>{q.topic}</div>
+          <div style={{fontSize:14,fontWeight:600,lineHeight:1.6,marginBottom:14}}>{q.q}</div>
+          {q.opts.map((o,i)=>(
+            <div key={i} style={opt(answers[q.id]===i)} onClick={()=>setAnswers(a=>({...a,[q.id]:i}))}>
+              <div style={{width:24,height:24,borderRadius:"50%",background:C.border,display:"flex",alignItems:"center",justifyContent:"center",fontSize:11,fontWeight:800,flexShrink:0}}>{["A","B","C","D"][i]}</div>
+              <span style={{fontSize:13,lineHeight:1.4}}>{o}</span>
+            </div>
+          ))}
+        </div>
+        <div style={{display:"flex",gap:8,padding:"0 14px"}}>
+          {qIdx>0 && <button style={btnOut()} onClick={()=>setQIdx(i=>i-1)}>← Trước</button>}
+          {qIdx<qs.length-1
+            ? <button style={btn(C.accent)} disabled={!answered} onClick={()=>setQIdx(i=>i+1)}>Tiếp →</button>
+            : <button style={btn(C.green)} disabled={!answered||submitting} onClick={submitAssignment}>
+                {submitting?<span style={st.spin}/>:"Nộp bài ✓"}
+              </button>
+          }
+        </div>
+      </div>
+    );
+  }
+
+  // Result screen
+  if (result) {
+    const pct=Math.round(result.correct/result.total*100);
+    const c=pct>=70?C.green:pct>=50?C.yellow:C.red;
+    return (
+      <div style={{...st.app,display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",padding:"0 24px"}}>
+        <div style={{fontSize:64,marginBottom:8}}>{pct>=70?"🏆":pct>=50?"👍":"📖"}</div>
+        <div style={{fontSize:48,fontWeight:800,fontFamily:"monospace",color:c}}>{result.correct}/{result.total}</div>
+        <div style={{fontSize:16,color:C.muted,marginTop:4}}>{pct}% chính xác</div>
+        <div style={{fontSize:13,color:C.muted,marginTop:8,marginBottom:24,textAlign:"center"}}>
+          {pct>=70?"Xuất sắc! Kết quả đã gửi giáo viên ✅":pct>=50?"Khá tốt! Cần cố gắng thêm":"Cần ôn tập thêm. Kết quả đã gửi giáo viên"}
+        </div>
+        <button style={btn(C.accent)} onClick={()=>{setDoing(null);loadData();}}>← Về danh sách bài</button>
+      </div>
+    );
+  }
+
+  // Assignment list
+  return (
+    <div style={st.app}>
+      <div style={st.hdr}>
+        <div style={{display:"flex",alignItems:"center",gap:10}}>
+          <button onClick={onBack} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:18}}>←</button>
+          <div>
+            <div style={{...st.logo,fontSize:16}}>🎓 {studentName}</div>
+            <div style={{fontSize:11,color:C.muted}}>Lớp: <strong style={{color:C.accent}}>{cls.code}</strong> · GV: {cls.teacher_name}</div>
+          </div>
+        </div>
+      </div>
+      {error && <div style={st.err}>⚠️ {error}</div>}
+      {loading ? <div style={{textAlign:"center",padding:40}}><span style={st.spin}/></div> :
+       assignments.length===0 ? <div style={{textAlign:"center",padding:"40px 20px",color:C.muted,fontSize:13}}>Chưa có bài tập nào</div> : (
+        <>
+          <p style={st.sec}>Bài tập ({assignments.length})</p>
+          <div style={{...st.card,padding:"4px 0"}}>
+            {assignments.map((a,i)=>{
+              const done=doneIds.includes(a.id);
+              const expired=a.deadline&&new Date(a.deadline)<new Date();
+              return (
+                <div key={a.id} style={{padding:"12px 14px",borderBottom:i<assignments.length-1?"1px solid "+C.border:"none"}}>
+                  <div style={{display:"flex",alignItems:"flex-start",gap:10}}>
+                    <div style={{flex:1}}>
+                      <div style={{fontSize:13,fontWeight:700,marginBottom:5}}>{a.title}</div>
+                      <div style={{display:"flex",gap:5,flexWrap:"wrap"}}>
+                        <span style={tag(C.accent)}>{a.subject}</span>
+                        <span style={tag(C.purple)}>{a.num_questions} câu</span>
+                        {done && <span style={tag(C.green)}>✓ Đã nộp</span>}
+                        {expired&&!done && <span style={tag(C.red)}>⏰ Hết hạn</span>}
+                        {a.deadline&&!expired && <span style={tag(C.yellow)}>⏰ {new Date(a.deadline).toLocaleDateString("vi")}</span>}
+                      </div>
+                    </div>
+                    {!done&&!expired && (
+                      <button onClick={()=>startAssignment(a)} style={btnSm(C.accent)}>Làm →</button>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// GUEST (SELF STUDY)
+// ══════════════════════════════════════════════════════════════════════════════
+function GuestApp({onBack}) {
+  const [tab, setTab] = useState("home");
+  const [scores, setScores] = useState(()=>{try{const s=localStorage.getItem("sm-s");return s?JSON.parse(s):DEF;}catch{return DEF;}});
+  const [buf, setBuf] = useState({});
+  const [exam, setExam] = useState({subject:null,idx:0,answers:{},done:false,results:null});
+
+  useEffect(()=>{try{localStorage.setItem("sm-s",JSON.stringify(scores));}catch{}},[scores]);
+  useEffect(()=>{
+    const b={};
+    SUBJECTS.forEach(s=>{const sc=scores[s]||{};b[s]={diemMieng:(sc.diemMieng||[]).join(", "),diemTX:(sc.diemTX||[]).join(", "),diemGK:sc.diemGK!=null?String(sc.diemGK):"",diemCK:sc.diemCK!=null?String(sc.diemCK):""}});
+    setBuf(b);
+  },[]);
+
+  const tbmMap = useMemo(()=>{const m={};SUBJECTS.forEach(s=>{m[s]=calcTBM(scores[s])});return m;},[scores]);
+  const tbmChung = useMemo(()=>{const v=Object.values(tbmMap).filter(t=>t!==null);return v.length?parseFloat((v.reduce((a,b)=>a+b,0)/v.length).toFixed(1)):null;},[tbmMap]);
+  const oc = useMemo(()=>classify(tbmChung),[tbmChung]);
+
+  function chgBuf(s,f,v){setBuf(b=>({...b,[s]:{...b[s],[f]:v}}))}
+  function commitBuf(s,f){
+    const raw=buf[s]?.[f]??"";
+    if(f==="diemMieng"||f==="diemTX"){
+      const arr=raw.split(/[,\s]+/).map(Number).filter(n=>!isNaN(n)&&n>=0&&n<=10);
+      setScores(p=>({...p,[s]:{...p[s],[f]:arr}}));
+    } else {
+      const v=parseFloat(raw);
+      setScores(p=>({...p,[s]:{...p[s],[f]:isNaN(v)?null:Math.min(10,Math.max(0,v))}}));
+    }
+  }
+  function startExam(s){setExam({subject:s,idx:0,answers:{},done:false,results:null});setTab("practice");}
+  function answerQ(qid,i){setExam(e=>({...e,answers:{...e.answers,[qid]:i}}));}
+  function submitExam(){
+    const qs=QUESTIONS[exam.subject];let c=0;
+    const detail=qs.map(q=>{const ok=exam.answers[q.id]===q.ans;if(ok)c++;return{...q,ok,chosen:exam.answers[q.id]}});
+    setExam(e=>({...e,done:true,results:{correct:c,total:qs.length,detail}}));
+  }
+
+  const NAV=[{id:"home",icon:"🏠",lbl:"Tổng quan"},{id:"scores",icon:"📊",lbl:"Điểm số"},{id:"practice",icon:"✏️",lbl:"Luyện tập"}];
+
+  const Home = () => (
+    <div>
+      <div style={st.hdr}>
+        <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+          <div><div style={st.logo}>StudyMate AG</div><div style={{fontSize:11,color:C.muted,marginTop:2}}>Tự luyện tập · THPT An Giang</div></div>
+          <button onClick={onBack} style={{background:"none",border:"1px solid "+C.border,borderRadius:8,color:C.muted,cursor:"pointer",fontSize:11,padding:"5px 10px"}}>Đổi vai</button>
+        </div>
+      </div>
+      <div style={st.hero}>
+        <div style={{fontSize:11,color:C.muted,marginBottom:8,textTransform:"uppercase",letterSpacing:".8px"}}>Điểm trung bình chung</div>
+        <div style={{fontSize:56,fontWeight:800,fontFamily:"monospace",lineHeight:1,color:oc.color}}>{tbmChung??"-"}</div>
+        <div style={{marginTop:10}}><span style={badge(oc.color)}>{oc.label}</span></div>
+        <div style={{fontSize:11,color:C.muted,marginTop:6}}>Thông tư 22/2021/TT-BGDĐT</div>
+      </div>
+      <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,padding:"0 14px"}}>
+        {[{val:SUBJECTS.length,label:"Môn học",c:C.accent},{val:Object.values(tbmMap).filter(t=>t!==null&&t>=8).length,label:"Môn Giỏi",c:C.green},{val:Object.values(tbmMap).filter(t=>t!==null&&t<6.5).length,label:"Cần cải thiện",c:C.red},{val:SUBJECTS.reduce((a,s)=>a+(QUESTIONS[s]?.length||0),0),label:"Câu hỏi",c:C.purple}].map((s,i)=>(
+          <div key={i} style={{background:C.surf,border:"1px solid "+C.border,borderRadius:12,padding:"12px 14px"}}>
+            <div style={{fontSize:28,fontWeight:800,fontFamily:"monospace",color:s.c}}>{s.val}</div>
+            <div style={{fontSize:11,color:C.muted,marginTop:2}}>{s.label}</div>
+          </div>
+        ))}
+      </div>
+      <p style={st.sec}>Luyện tập nhanh</p>
+      <div style={{display:"flex",gap:6,flexWrap:"wrap",padding:"0 14px"}}>
+        {SUBJECTS.map(s=><button key={s} style={{...btnOut(false),padding:"6px 13px",fontSize:12}} onClick={()=>startExam(s)}>{s}</button>)}
+      </div>
+      <p style={st.sec}>TBM từng môn</p>
+      <div style={{...st.card,padding:"4px 0"}}>
+        {SUBJECTS.map(s=>{const t=tbmMap[s],cl=classify(t);return(
+          <div key={s} style={{display:"flex",alignItems:"center",gap:10,padding:"10px 14px",borderBottom:"1px solid "+C.border,cursor:"pointer"}} onClick={()=>setTab("scores")}>
+            <div style={{flex:1,fontSize:13,fontWeight:600}}>{s}</div>
+            <div style={{flex:"0 0 80px",height:5,background:C.border,borderRadius:3,overflow:"hidden"}}><div style={{height:"100%",borderRadius:3,background:cl.color,width:t?t*10+"%":"0%"}}/></div>
+            <div style={{fontFamily:"monospace",fontSize:13,fontWeight:700,color:cl.color,minWidth:30,textAlign:"right"}}>{t??"-"}</div>
+            <span style={{...badge(cl.color),fontSize:10,padding:"2px 7px"}}>{cl.label}</span>
+          </div>
+        );})}
+      </div>
+    </div>
+  );
+
+  const Scores = () => (
+    <div>
+      <div style={st.hdr}><div style={{...st.logo,fontSize:16}}>📊 Điểm số</div></div>
+      {SUBJECTS.map(s=>{const t=tbmMap[s],cl=classify(t),b=buf[s]||{};return(
+        <div key={s}>
+          <p style={st.sec}>{s} — <span style={{color:cl.color}}>{t??"-"} ({cl.label})</span></p>
+          <div style={st.card}>
+            <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8}}>
+              {[{f:"diemMieng",lbl:"Điểm miệng",ph:"VD: 8, 7"},{f:"diemTX",lbl:"Điểm thường xuyên",ph:"VD: 7, 8, 6"},{f:"diemGK",lbl:"Giữa kỳ",ph:"VD: 7.5"},{f:"diemCK",lbl:"Cuối kỳ ⭐",ph:"VD: 8.0"}].map(({f,lbl,ph})=>(
+                <div key={f}>
+                  <div style={{fontSize:10,color:C.muted,fontWeight:700,textTransform:"uppercase",marginBottom:4}}>{lbl}</div>
+                  <input style={st.input} placeholder={ph} value={b[f]??""} onChange={e=>chgBuf(s,f,e.target.value)} onBlur={()=>commitBuf(s,f)}/>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      );})}
+    </div>
+  );
+
+  const Practice = () => {
+    if (!exam.subject) return (
+      <div>
+        <div style={st.hdr}><div style={{...st.logo,fontSize:16}}>✏️ Luyện tập</div></div>
+        <div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:8,padding:14}}>
+          {SUBJECTS.map(s=>{const t=tbmMap[s],cl=classify(t);return(
+            <div key={s} onClick={()=>startExam(s)} style={{background:C.surf,border:"1px solid "+C.border,borderRadius:12,padding:13,cursor:"pointer"}}>
+              <div style={{fontSize:13,fontWeight:700}}>{s}</div>
+              <div style={{fontSize:11,color:C.muted,marginTop:3}}>{QUESTIONS[s].length} câu</div>
+              <span style={{...badge(cl.color),fontSize:10,padding:"2px 7px",marginTop:6,display:"inline-flex"}}>TBM: {t??"-"}</span>
+            </div>
+          );})}
+        </div>
+      </div>
+    );
+    if (exam.done && exam.results) {
+      const {correct,total,detail}=exam.results,pct=Math.round(correct/total*100);
+      const c=pct>=70?C.green:pct>=50?C.yellow:C.red;
+      return (
+        <div>
+          <div style={st.hdr}><div style={{...st.logo,fontSize:16}}>🏆 Kết quả</div></div>
+          <div style={{textAlign:"center",padding:"20px 14px"}}>
+            <div style={{fontSize:52,fontWeight:800,fontFamily:"monospace",color:c}}>{correct}/{total}</div>
+            <div style={{fontSize:13,color:C.muted,marginTop:4}}>{pct}% chính xác</div>
+            <div style={{display:"flex",gap:8,justifyContent:"center",marginTop:14}}>
+              <button style={{...btnOut(false),padding:"11px 16px"}} onClick={()=>setExam({subject:null,idx:0,answers:{},done:false,results:null})}>Chọn môn khác</button>
+              <button style={{...btn(C.accent,undefined,false),padding:"11px 16px"}} onClick={()=>startExam(exam.subject)}>Làm lại</button>
+            </div>
+          </div>
+          <div style={{...st.card,padding:"4px 0"}}>
+            {detail.map((q,i)=>(
+              <div key={i} style={{padding:"10px 14px",borderBottom:i<detail.length-1?"1px solid "+C.border:"none"}}>
+                <div style={{display:"flex",alignItems:"flex-start",gap:10}}>
+                  <span>{q.ok?"✅":"❌"}</span>
+                  <div style={{flex:1}}>
+                    <div style={{fontSize:10,color:C.purple,fontWeight:800,textTransform:"uppercase",marginBottom:2}}>{q.topic}</div>
+                    <div style={{fontSize:12,lineHeight:1.5}}>{q.q}</div>
+                    {!q.ok && <div style={{fontSize:11,color:C.green,marginTop:3}}>✓ Đáp án: <strong>{q.opts[q.ans]}</strong></div>}
+                    {q.exp && <div style={{background:C.surf2,borderLeft:"3px solid "+C.accent,borderRadius:"0 8px 8px 0",padding:"8px 10px",marginTop:8,fontSize:11,lineHeight:1.6,color:"#94a3b8"}}>💡 {q.exp}</div>}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+    const qs=QUESTIONS[exam.subject],q=qs[exam.idx],pct=(exam.idx/qs.length)*100,answered=exam.answers[q.id]!==undefined;
+    return (
+      <div>
+        <div style={st.hdr}>
+          <div style={{display:"flex",alignItems:"center",justifyContent:"space-between"}}>
+            <div style={{...st.logo,fontSize:14}}>{exam.subject}</div>
+            <div style={{fontSize:12,color:C.muted,fontFamily:"monospace",fontWeight:600}}>{exam.idx+1}/{qs.length}</div>
+          </div>
+        </div>
+        <div style={{height:3,background:C.border,margin:"0 14px 10px"}}><div style={{height:"100%",background:"linear-gradient(90deg,"+C.accent+","+C.purple+")",width:pct+"%",transition:"width .3s"}}/></div>
+        <div style={st.card}>
+          <div style={{fontSize:10,color:C.purple,fontWeight:800,marginBottom:8,textTransform:"uppercase"}}>{q.topic}</div>
+          <div style={{fontSize:14,fontWeight:600,lineHeight:1.6,marginBottom:14}}>{q.q}</div>
+          {q.opts.map((o,i)=>(
+            <div key={i} style={opt(exam.answers[q.id]===i)} onClick={()=>answerQ(q.id,i)}>
+              <div style={{width:24,height:24,borderRadius:"50%",background:C.border,display:"flex",alignItems:"center",justifyContent:"center",fontSize:11,fontWeight:800,flexShrink:0}}>{["A","B","C","D"][i]}</div>
+              <span style={{fontSize:13,lineHeight:1.4}}>{o}</span>
+            </div>
+          ))}
+        </div>
+        <div style={{display:"flex",gap:8,padding:"0 14px"}}>
+          {exam.idx>0 && <button style={btnOut()} onClick={()=>setExam(e=>({...e,idx:e.idx-1}))}>← Trước</button>}
+          {exam.idx<qs.length-1
+            ? <button style={btn(C.accent)} disabled={!answered} onClick={()=>setExam(e=>({...e,idx:e.idx+1}))}>Tiếp →</button>
+            : <button style={btn(C.green)} disabled={!answered} onClick={submitExam}>Nộp bài ✓</button>
+          }
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <div style={st.app}>
+      {tab==="home" && <Home/>}
+      {tab==="scores" && <Scores/>}
+      {tab==="practice" && <Practice/>}
+      <nav style={st.nav}>
+        {NAV.map(n=>(
+          <button key={n.id} style={nb(tab===n.id)}
+            onClick={()=>{if(n.id==="practice"&&tab==="practice")setExam({subject:null,idx:0,answers:{},done:false,results:null});setTab(n.id);}}>
+            <span style={{fontSize:19,lineHeight:1}}>{n.icon}</span>{n.lbl}
+          </button>
+        ))}
+      </nav>
+    </div>
+  );
+}
+
+// ══════════════════════════════════════════════════════════════════════════════
+// ROOT APP
+// ══════════════════════════════════════════════════════════════════════════════
+function App() {
+  const [role, setRole] = useState(null);
+  const [teacherClass, setTeacherClass] = useState(null);
+  const [studentInfo, setStudentInfo] = useState(null);
+  function reset() { setRole(null); setTeacherClass(null); setStudentInfo(null); }
+  if (!role) return <RoleSelect onSelect={setRole}/>;
+  if (role==="guest") return <GuestApp onBack={reset}/>;
+  if (role==="teacher"&&!teacherClass) return <TeacherLogin onLogin={c=>setTeacherClass(c)} onBack={reset}/>;
+  if (role==="teacher"&&teacherClass) return <TeacherDashboard cls={teacherClass} onBack={reset}/>;
+  if (role==="student"&&!studentInfo) return <StudentLogin onLogin={(c,n)=>setStudentInfo({cls:c,name:n})} onBack={reset}/>;
+  if (role==="student"&&studentInfo) return <StudentDashboard cls={studentInfo.cls} studentName={studentInfo.name} onBack={reset}/>;
+  return null;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+
+</script>
+</body>
+</html>
