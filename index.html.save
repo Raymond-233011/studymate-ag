@@ -4,10 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>StudyMate AG – Trợ lý học tập THPT An Giang</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
-<style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.pro>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#0a0e1a;color:#f1f5f9}
 input,button,select{font-family:inherit}
@@ -229,73 +226,38 @@ function TeacherLogin({onLogin, onBack}) {
 // STUDENT LOGIN
 // ══════════════════════════════════════════════════════════════════════════════
 function StudentLogin({onLogin, onBack}) {
-  const [mode, setMode] = useState("login");
-  const [form, setForm] = useState({code:"", name:"", pass:""});
+  const [code, setCode] = useState("");
+  const [name, setName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const set = (k,v) => setForm(f=>({...f,[k]:v}));
-
-  async function handleAction() {
-    if (!form.code || !form.name || !form.pass) return setError("Vui lòng nhập đủ thông tin");
+  async function handleJoin() {
+    if (!code||!name.trim()) return setError("Nhập đủ mã lớp và họ tên");
     setLoading(true); setError("");
     try {
-      // 1. Kiểm tra mã lớp
-      const classes = await db.get("classes", "code=eq."+form.code.toUpperCase()+"&select=*");
-      if (!classes.length) throw new Error("Không tìm thấy mã lớp");
-      const cls = classes[0];
-
-      if (mode === "register") {
-        // Đăng ký tài khoản mới
-        const exist = await db.get("students", `class_id=eq.${cls.id}&name=eq.${encodeURIComponent(form.name)}`);
-        if (exist.length) throw new Error("Tên học sinh này đã tồn tại trong lớp");
-        
-        await db.post("students", {class_id: cls.id, name: form.name, password: form.pass});
-        onLogin(cls, form.name);
-      } else {
-        // Đăng nhập
-        const students = await db.get("students", `class_id=eq.${cls.id}&name=eq.${encodeURIComponent(form.name)}&select=*`);
-        if (!students.length) throw new Error("Học sinh chưa đăng ký trong lớp này");
-        if (students[0].password !== form.pass) throw new Error("Sai mật khẩu");
-        onLogin(cls, form.name);
-      }
+      const rows = await db.get("classes","code=eq."+code.toUpperCase()+"&select=*");
+      if (!rows.length) return setError("Không tìm thấy mã lớp");
+      onLogin(rows[0], name.trim());
     } catch(e) { setError(e.message); }
     setLoading(false);
   }
-
-  const Field = ({k,ph,type="text",up=false}) => (
-    <input style={{...st.input,marginBottom:10,textTransform:up?"uppercase":"none"}} placeholder={ph} type={type}
-      value={form[k]} onChange={e=>set(k,e.target.value)}/>
-  );
 
   return (
     <div style={{...st.app,padding:"20px 16px"}}>
       <button onClick={onBack} style={{background:"none",border:"none",color:C.muted,cursor:"pointer",fontSize:13,marginBottom:16}}>← Quay lại</button>
       <div style={{...st.logo,fontSize:20,marginBottom:4}}>🎓 Học sinh</div>
-      <div style={{fontSize:12,color:C.muted,marginBottom:20}}>Đăng nhập để bảo mật lịch sử học tập</div>
-      
-      <div style={{display:"flex",gap:8,marginBottom:20}}>
-        {["login","register"].map(m=>(
-          <button key={m} onClick={()=>{setMode(m);setError("");}}
-            style={{...btnSm(m===mode?C.accent:"transparent",m===mode?"#0a0e1a":C.muted),border:"1px solid "+(m===mode?C.accent:C.border),flex:1}}>
-            {m==="login"?"Đăng nhập":"Tạo tài khoản"}
-          </button>
-        ))}
-      </div>
-
-      <Field k="code" ph="Mã lớp (VD: TOAN11A5)" up={true}/>
-      <Field k="name" ph="Họ và tên của bạn"/>
-      <Field k="pass" ph="Mật khẩu" type="password"/>
-      
+      <div style={{fontSize:12,color:C.muted,marginBottom:20}}>Nhập mã lớp từ giáo viên</div>
+      <input style={{...st.input,marginBottom:10,textTransform:"uppercase"}} placeholder="Mã lớp (VD: TOAN12A)"
+        value={code} onChange={e=>setCode(e.target.value)}/>
+      <input style={{...st.input,marginBottom:10}} placeholder="Họ và tên của bạn"
+        value={name} onChange={e=>setName(e.target.value)}/>
       {error && <div style={{...st.err,margin:"0 0 10px"}}>⚠️ {error}</div>}
-      <button style={btn(C.accent)} disabled={loading} onClick={handleAction}>
-        {loading ? <span style={st.spin}/> : (mode==="login"?"Vào lớp →":"Đăng ký →")}
+      <button style={btn(C.accent)} disabled={loading} onClick={handleJoin}>
+        {loading ? <span style={st.spin}/> : "Vào lớp →"}
       </button>
     </div>
   );
 }
-
-
 
 // ══════════════════════════════════════════════════════════════════════════════
 // TEACHER DASHBOARD
